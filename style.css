@@ -3,8 +3,8 @@
    ============================================================ */
 @font-face {
   font-family: 'BiroScript';
-  src: url('fonts/Biro_Script_reduced.otf') format('opentype'),
-       url('fonts/Biro_Script_reduced.ttf') format('truetype');
+  src: url('Biro_Script_reduced.otf') format('opentype'),
+       url('Biro_Script_reduced.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Other · Anastasia Kim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__name" href="index.html">Anastasia Kim</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="projects.html">current projects</a></li>
+      <li><a href="publications.html">publications</a></li>
+      <li><a href="cv.html">cv</a></li>
+      <li><a href="other.html" class="nav__active">other</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="section__inner">
+      <h2 class="section__heading">other</h2>
+
+      <nav class="other-nav">
+        <a href="#places">places</a>
+        <a href="#bakeries">best bakeries</a>
+      </nav>
+
+      <!-- PLACES — 2x2 flip grid -->
+      <div class="other-section" id="places">
+        <p class="other-section__title">places</p>
+        <p class="section__sub">I just like these pictures.</p>
+
+        <div class="flip-grid">
+
+          <!-- TOP LEFT -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <img src="place-top-left.jpg" alt="Place" />
+              </div>
+              <div class="flip-card__back">
+                <p class="flip-card__back-title">Place</p>
+                <p class="flip-card__back-text">Really cool place (I think?)</p>
+                <a href="https://maps.google.com/?q=Place+Name" target="_blank" rel="noopener">click here →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TOP RIGHT — video -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+                  <source src="place-top-right.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="flip-card__back">
+                <p class="flip-card__back-title">Place</p>
+                <p class="flip-card__back-text">Really cool place (I think?)</p>
+                <a href="https://maps.google.com/?q=Place+Name" target="_blank" rel="noopener">click here →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM LEFT -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <img src="place-bottom-left.jpg" alt="Place" />
+              </div>
+              <div class="flip-card__back">
+                <p class="flip-card__back-title">Place</p>
+                <p class="flip-card__back-text">Really cool place (I think?)</p>
+                <a href="https://maps.google.com/?q=Place+Name" target="_blank" rel="noopener">click here →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM RIGHT -->
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <img src="place-bottom-right.jpg" alt="Place" />
+              </div>
+              <div class="flip-card__back">
+                <p class="flip-card__back-title">Place</p>
+                <p class="flip-card__back-text">Really cool place (I think?)</p>
+                <a href="https://maps.google.com/?q=Place+Name" target="_blank" rel="noopener">click here →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BAKERIES -->
+      <div class="other-section" id="bakeries">
+        <p class="other-section__title">best bakeries</p>
+        <ul class="bakery-list">
+          <li class="bakery-item">
+            <div>
+              <p class="bakery-item__name">Bakery Name</p>
+              <p class="bakery-item__city">City</p>
+            </div>
+            <a class="bakery-item__link" href="https://maps.google.com/?q=Bakery+Name" target="_blank" rel="noopener">Maps →</a>
+          </li>
+          <li class="bakery-item">
+            <div>
+              <p class="bakery-item__name">Another Bakery</p>
+              <p class="bakery-item__city">City</p>
+            </div>
+            <a class="bakery-item__link" href="https://maps.google.com/?q=Another+Bakery" target="_blank" rel="noopener">Maps →</a>
+          </li>
+          <li class="bakery-item">
+            <div>
+              <p class="bakery-item__name">Your Favourite</p>
+              <p class="bakery-item__city">City</p>
+            </div>
+            <a class="bakery-item__link" href="https://maps.google.com/?q=Your+Favourite" target="_blank" rel="noopener">Maps →</a>
+          </li>
+          <li class="bakery-item">
+            <div>
+              <p class="bakery-item__name">One More</p>
+              <p class="bakery-item__city">City</p>
+            </div>
+            <a class="bakery-item__link" href="https://maps.google.com/?q=One+More" target="_blank" rel="noopener">Maps →</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Anastasia Kim · <a href="mailto:anastask@andrew.cmu.edu">anastask@andrew.cmu.edu</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

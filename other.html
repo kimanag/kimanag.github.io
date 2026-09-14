@@ -35,62 +35,115 @@
       <div class="other-section" id="pictures">
         <p class="other-section__title">pictures</p>
 
-        <div class="flip-grid">
-          <!-- TOP LEFT -->
-          <div class="flip-card" onclick="this.classList.toggle('flipped')">
-            <div class="flip-card__inner">
-              <div class="flip-card__front">
-                <img src="place-top-left.jpg" alt="Place" />
-              </div>
-              <div class="flip-card__back">
-                <p class="flip-card__back-title">Place</p>
-                <p class="flip-card__back-text">Really cool place (I think?)</p>
-                <a href="https://maps.app.goo.gl/Woca1SdLXiqtsrKQ9" target="_blank" rel="noopener">click here →</a>
-              </div>
-            </div>
-          </div>
-          <!-- TOP RIGHT — video -->
-          <div class="flip-card" onclick="this.classList.toggle('flipped')">
-            <div class="flip-card__inner">
-              <div class="flip-card__front">
-                <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
-                  <source src="place-top-right.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="flip-card__back">
-                <p class="flip-card__back-title">Place</p>
-                <p class="flip-card__back-text">Really cool place (I think?)</p>
-                <a href="https://maps.app.goo.gl/2GyNnUTu9aKmZatF7" target="_blank" rel="noopener">click here →</a>
-              </div>
-            </div>
-          </div>
-          <!-- BOTTOM LEFT -->
-          <div class="flip-card" onclick="this.classList.toggle('flipped')">
-            <div class="flip-card__inner">
-              <div class="flip-card__front">
-                <img src="place-bottom-left.jpg" alt="Place" />
-              </div>
-              <div class="flip-card__back">
-                <p class="flip-card__back-title">Place</p>
-                <p class="flip-card__back-text">Really cool place (I think?)</p>
-                <a href="https://maps.app.goo.gl/RCNGpDkTG8XGGuEw9" target="_blank" rel="noopener">click here →</a>
-              </div>
-            </div>
-          </div>
-          <!-- BOTTOM RIGHT -->
-          <div class="flip-card" onclick="this.classList.toggle('flipped')">
-            <div class="flip-card__inner">
-              <div class="flip-card__front">
-                <img src="place-bottom-right.jpg" alt="Place" />
-              </div>
-              <div class="flip-card__back">
-                <p class="flip-card__back-title">Place</p>
-                <p class="flip-card__back-text">Really cool place (I think?)</p>
-                <a href="https://maps.app.goo.gl/RCNGpDkTG8XGGuEw9" target="_blank" rel="noopener">click here →</a>
-              </div>
-            </div>
-          </div>
+       <div class="picture-marquee" id="pictureMarquee">
+  <div class="picture-track">
+
+    <!-- Original pictures -->
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-top-left.jpg" alt="Place" />
         </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Place</p>
+          <p class="flip-card__back-text">Really cool place (I think?)</p>
+          <a href="https://maps.app.goo.gl/Woca1SdLXiqtsrKQ9" target="_blank" rel="noopener">click here →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <video autoplay muted loop playsinline>
+            <source src="place-top-right.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Place</p>
+          <p class="flip-card__back-text">Really cool place (I think?)</p>
+          <a href="https://maps.app.goo.gl/2GyNnUTu9aKmZatF7" target="_blank" rel="noopener">click here →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-bottom-left.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Place</p>
+          <p class="flip-card__back-text">Really cool place (I think?)</p>
+          <a href="https://maps.app.goo.gl/RCNGpDkTG8XGGuEw9" target="_blank" rel="noopener">click here →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-bottom-right.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Place</p>
+          <p class="flip-card__back-text">Really cool place (I think?)</p>
+          <a href="https://maps.app.goo.gl/RCNGpDkTG8XGGuEw9" target="_blank" rel="noopener">click here →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Temporary placeholders using your existing pictures -->
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-bottom-left.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Coming soon</p>
+          <p class="flip-card__back-text">More pictures soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-top-left.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Coming soon</p>
+          <p class="flip-card__back-text">More pictures soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-bottom-right.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Coming soon</p>
+          <p class="flip-card__back-text">More pictures soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card__inner">
+        <div class="flip-card__front">
+          <img src="place-top-left.jpg" alt="Place" />
+        </div>
+        <div class="flip-card__back">
+          <p class="flip-card__back-title">Coming soon</p>
+          <p class="flip-card__back-text">More pictures soon!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
       </div>
       <!-- BAKERIES -->
       <div class="other-section" id="bakeries">

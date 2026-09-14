@@ -115,3 +115,12 @@ const activeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => activeObserver.observe(s));
+
+// ============================================================
+// OTHER — flip pictures
+// ============================================================
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});

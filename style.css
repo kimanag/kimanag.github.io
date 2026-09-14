@@ -183,8 +183,11 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  text-align: center;
 }
+
+
+
+
 
 
 .welcome__heading {
@@ -196,6 +199,10 @@ img { display: block; max-width: 100%; }
   margin-bottom: 20px;
 }
 
+.welcome {
+  text-align: center;
+}
+
 .welcome__text {
   font-size: 1rem;
   color: var(--text-muted);
@@ -203,6 +210,7 @@ img { display: block; max-width: 100%; }
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 /* Featured image */

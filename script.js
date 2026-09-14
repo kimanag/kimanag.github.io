@@ -1,22 +1,28 @@
 // ============================================================
 // NAV — shrink on scroll + mobile toggle
 // ============================================================
-const nav = document.getElementById('nav');
+const nav = document.querySelector('.nav');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-});
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+}
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 
-// Close mobile nav when a link is clicked
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
+  // Close mobile nav when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+}
 
 // ============================================================
 // SCROLL REVEAL
@@ -54,7 +60,8 @@ document.querySelectorAll(revealTargets.join(',')).forEach(el => {
 // ============================================================
 const form = document.getElementById('contactForm');
 
-form.addEventListener('submit', (e) => {
+if (form) {
+  form.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Sending…';
@@ -70,6 +77,7 @@ form.addEventListener('submit', (e) => {
     }, 3000);
   }, 1200);
 });
+}
 
 // ============================================================
 // CV — inline PDF viewer toggle
@@ -80,8 +88,13 @@ const cvPdfPanel = document.getElementById('cvPdfPanel');
 if (cvToggle && cvPdfPanel) {
   cvToggle.addEventListener('click', () => {
     const isOpen = cvPdfPanel.classList.toggle('is-open');
+
     cvToggle.setAttribute('aria-expanded', String(isOpen));
-    cvToggle.textContent = isOpen ? '↑ Hide PDF' : '↓ View PDF';
+    cvPdfPanel.setAttribute('aria-hidden', String(!isOpen));
+
+    cvToggle.textContent = isOpen
+      ? '→ Hide PDF'
+      : '→ View PDF';
   });
 }
 
